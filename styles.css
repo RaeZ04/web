@@ -6,7 +6,7 @@
 .header-container {
     background: linear-gradient(to bottom, #190c4a 5%, #00020a 95%);
     width: 99vmax;
-    height: 17vmax;
+    height: 15vmax;
     position: absolute;
     top:-0.5vmax;
     left: -0.5vmax;
@@ -80,7 +80,17 @@
 .footer {
     position: relative;
     height: 10vmax;
+    width: 98.5vmax;
     top: 75vmax;
+    left: -0.6vmax;
     background: linear-gradient(to bottom, #190c4a 5%, #00020a 95%);
     justify-content: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+
 }
