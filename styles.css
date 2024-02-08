@@ -1,61 +1,86 @@
-body {
+.body {
     background-color: rgb(255, 255, 255);
-    margin: 0px;
+    margin: 0vmax;
 }
 
 .header-container {
-    background-color: rgb(72, 36, 114);
-    width: 100%;
-    height: 150px;
-    overflow: hidden; 
+    background: linear-gradient(to bottom, #190c4a 5%, #00020a 95%);
+    width: 99vmax;
+    height: 17vmax;
+    position: absolute;
+    top:-0.5vmax;
+    left: -0.5vmax;
+    overflow: hidden;
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Add this line */
 }
 
 .logo {
-    width: 120px;
-    height: 120px;
-    margin-left: 50px; 
+    width: 8vmax;
+    height: 8vmax;
+    margin-left: 3vmax;
 }
 
 #titulo {
-    font-size: 60px; 
+    font-size: 4vmax;
     color: white;
     font-family: serif;
-    margin-left: 50px; 
+    margin-left: 3vmax;
 }
 
 .Enca2 {
-    font-size: 40px;
-    margin-left: 170px; 
+    font-size: 2.5vmax;
+    margin-left: 8.5vmax;
+    color: white;
+}
+
+.Enca5 {
+    font-size: 2.5vmax;
+    margin-left: 3vmax;
     color: white;
 }
 
 .Enca3 {
-    font-size: 40px;
-    margin-left: 50px; 
+    font-size: 2.5vmax;
+    margin-left: 3vmax;
     color: white;
 }
 
-.SignIn{
-    font-size: 20px;
-    margin-left: 600px;
-    margin-top: -50px; 
+.Enca4 {
+    font-size: 2.5vmax;
+    margin-left: 3vmax;
     color: white;
 }
 
-.SignUp{
-    font-size: 20px;
-    margin-left: 30px;
-    margin-top: -50px; 
+.SignIn {
+    font-size: 1vmax;
+    position: absolute;
+    top:1vmax;
+    right: 12vmax;
     color: white;
 }
 
-.lineavert{
-    height: 30px;
+.SignUp {
+    font-size: 1vmax;
+    position: absolute;
+    top:1vmax;
+    right: 4vmax;
+    color: white;
+}
+
+.lineavert {
+    height: 1.5vmax;
     position: relative;
-    top: 4px;
-    left: 25px;
-    color: rgba(255, 255, 255, 0.575)
+    top: 0.2vmax;
+    left: 1.25vmax;
+    color: rgba(255, 255, 255, 0.575);
+}
 
+.footer {
+    position: relative;
+    height: 10vmax;
+    top: 75vmax;
+    background: linear-gradient(to bottom, #190c4a 5%, #00020a 95%);
+    justify-content: center;
 }
