@@ -94,3 +94,13 @@ a{
     text-decoration: none;
 
 }
+.fotoPlaneta{
+    position: relative;
+    height: 65vmax;
+    width: 98.5vmax;
+    top: 13vmax;
+    left: -0.5vmax;
+    right: -0.5vmax;
+    overflow: hidden;
+
+}
