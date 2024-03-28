@@ -1,0 +1,494 @@
+/* MISC */
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    height: 100rem;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* HEADER */
+
+#containerheader {
+    display: flex;
+    background-color: black;
+    height: 12rem;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    transition: height 0.3s ease;
+}
+
+/* IZQUIERDA */
+
+#containerheaderizq {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    flex: 1;
+    max-width: 35rem;
+    padding-left: 5rem;
+    gap: 1rem;
+}
+
+#headerproductos {
+    display: flex;
+    color: white;
+    padding-top: 4rem;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 12rem;
+}
+
+#headernoticias {
+    display: flex;
+    color: white;
+    padding-top: 4rem;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 12rem;
+}
+
+#headercontacto {
+    display: flex;
+    color: white;
+    padding-top: 4rem;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 12rem;
+}
+
+/* MEDIO */
+
+#containerheadermedio {
+    display: flex;
+    padding-top: 1rem;
+    flex: 1;
+    max-width: 10rem;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15rem;
+    margin-left: 10rem;
+}
+
+/* DERECHA */
+
+#containerheaderder {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.5rem;
+    justify-content: end;
+    margin-right: 5rem;
+    width: 25rem;
+}
+
+
+#titulo {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    transition: opacity 0.3s ease;
+}
+
+.iconheader {
+    height: 3rem;
+    padding-bottom: rem;
+    padding-left: 0.5rem;
+}
+
+#logoheader {
+    height: 7rem;
+    width: 8.4rem;
+}
+
+#sign {
+    background-color: rgb(29, 28, 28);
+    border: 0.1rem solid white;
+    max-height: 4.5rem;
+    border-radius: 0.8rem;
+}
+
+#inicioyregistro {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    white-space: nowrap;
+}
+
+#containerheader.scrolled {
+    height: 9.3rem;
+}
+
+
+
+
+
+
+@media (max-width: 1350px) {
+
+    #contacto {
+        display: none;
+    }
+
+    #noticias {
+        display: none;
+    }
+
+    #productos {
+        display: none;
+    }
+
+    #containerheaderizq {
+        padding-left: 1.3rem;
+    }
+
+    .iconheader {
+        height: 4rem;
+    }
+
+    #containerheadermedio {
+        margin-right: 5rem;
+        margin-left: 8rem;
+    }
+
+    #containerheaderder {
+        margin-right: 0rem;
+        width: 30rem;
+    }
+
+    #containerheaderder {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    #contacto {
+        display: none;
+    }
+
+    #noticias {
+        display: none;
+    }
+
+    #productos {
+        display: none;
+    }
+
+    #containerheaderizq {
+        padding-left: 1.3rem;
+    }
+
+    .iconheader {
+        height: 4rem;
+    }
+
+    #containerheadermedio {
+        margin-right: 5rem;
+        margin-left: 10rem;
+    }
+
+    #containerheaderder {
+        margin-right: 0rem;
+        width: 30rem;
+    }
+
+    #containerheaderder {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 890px) {
+
+    #contacto {
+        display: none;
+    }
+
+    #noticias {
+        display: none;
+    }
+
+    #productos {
+        display: none;
+    }
+
+    #containerheaderizq {
+        gap: 2.5rem;
+        padding-left: 1.3rem;
+    }
+
+    .iconheader {
+        height: 4rem;
+    }
+
+    #containerheadermedio {
+        margin-right: 3rem;
+        margin-left: 2.5rem;
+    }
+
+    #containerheaderder {
+        margin-right: 0rem;
+    }
+
+    #containerheaderder {
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    #contacto {
+        display: none;
+    }
+
+    #noticias {
+        display: none;
+    }
+
+    #productos {
+        display: none;
+    }
+
+    #containerheaderizq {
+        gap: 1rem;
+        padding-left: 1.3rem;
+        max-width: 15rem;
+    }
+
+    .iconheader {
+        height: 3rem;
+    }
+
+    #containerheadermedio {
+        margin-right: rem;
+        margin-left: 4rem;
+    }
+
+    #containerheaderder {
+        margin-right: 1.5rem;
+        justify-content: end;
+        max-width: 15rem;
+
+    }
+
+
+
+}
+
+@media (max-width: 650px) {
+
+    #contacto {
+        display: none;
+    }
+
+    #noticias {
+        display: none;
+    }
+
+    #productos {
+        display: none;
+    }
+
+    #containerheaderizq {
+        gap: 1rem;
+        padding-left: 1.3rem;
+    }
+
+    .iconheader {
+        height: 2.5rem;
+    }
+
+    #containerheadermedio {
+        margin-right: 1rem;
+        margin-left: 2.2rem;
+    }
+
+    #containerheaderder {
+        margin-right: 0rem;
+    }
+
+    #containerheaderder {
+        justify-content: center;
+    }
+
+    #titulo {
+        font-size: 1.5rem;
+    }
+
+    #logoheader {
+        height: 6rem;
+        width: 7.2rem;
+    }
+
+    #sign {
+        max-height: 3.5rem;
+    }
+
+    #inicioyregistro {
+        padding-top: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 550px) {
+
+        
+
+        #contacto {
+            display: none;
+        }
+
+        #noticias {
+            display: none;
+        }
+
+        #productos {
+            display: none;
+        }
+
+        #containerheaderizq {
+            gap: 0.5rem;
+            padding-left: 1.3rem;
+            
+        }
+
+        .iconheader {
+            height: 2.2rem;
+        }
+
+        #containerheadermedio {
+            /* margin-right: 2rem; */
+            margin-left: 1.2rem;
+            padding-top: 2rem;
+        }
+
+        #containerheaderder {
+            margin-right: 0rem;
+        }
+
+        #containerheaderder {
+            justify-content: center;
+            width: 11rem;
+        }
+
+        #titulo {
+            font-size: 1.2rem;
+        }
+
+        #logoheader {
+            height: 5rem;
+            width: 6rem;
+        }
+
+        #sign {
+            max-height: 3rem;
+        }
+
+        #inicioyregistro {
+            padding-top: 0.5rem;
+            font-size: 0.75rem;
+        }
+
+    }
+
+    @media (max-width: 430px) {
+
+        #containerheader {
+            display: flex;
+            background-color: black;
+            height: 12rem;
+            justify-content: space-between;
+            width: 100%;
+            position: fixed;
+            transition: height 0.3s ease;
+        }
+
+        #contacto {
+            display: none;
+        }
+
+        #noticias {
+            display: none;
+        }
+
+        #productos {
+            display: none;
+        }
+
+        #containerheaderizq {
+            gap: 1rem;
+            padding-left: 0.5rem;
+            justify-content: space-evenly;
+            
+        }
+
+        .iconheader {
+            height: 1.6rem;
+            padding-left: 0rem;
+            margin: 0px;
+            padding: 0px;
+            gap: 0px;
+    
+        }
+
+        #containerheadermedio {
+            /* margin-right: 2rem; */
+            margin-left: 1rem;
+            padding-top: 2rem;
+            margin-right:0px ;
+            padding-right: 30px;
+        }
+
+        #containerheaderder {
+            margin-right: 0rem;
+        }
+
+        #containerheaderder {
+            justify-content: center;
+            width: fit-content;
+            padding-left: 0px;
+            margin-left: 0px;
+            padding-right: 20px;
+            
+        }
+
+        #titulo {
+            font-size: 1.2rem;
+        }
+
+        #logoheader {
+            height: 5rem;
+            width: 6rem;
+        }
+
+        #sign {
+            max-height: 3rem;
+            display: none;
+        }
+
+        #inicioyregistro {
+            padding-top: 0.5rem;
+            font-size: 0.75rem;
+            
+        }
+
+    }
+}
