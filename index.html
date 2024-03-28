@@ -13,57 +13,61 @@
 
 <body>
 
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('containerheader');
+            const title = document.getElementById('titulo');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+                title.style.opacity = '0';
+            } else {
+                header.classList.remove('scrolled');
+                title.style.opacity = '1';
+            }
+        });
+        
+    </script>
     <!-- Header -->
 
-    <div class="header-container">
-        <table class="TablaHeader">
-            <tr>
-                <td>
-                    <a id="productos" href="">PRODUCTOS</a>
-                </td>
-                <td>
-                    <a href="">
-                        <img id="icon" src="Media/producto.png" alt="">
-                    </a>
-                </td>
-                <td>
-                    <a id="noticias" href="">NOTICIAS</a>
-                </td>
-                <td>
-                    <a href="">
-                        <img id="icon2" src="Media/paper.png" alt="">
-                    </a>
-                </td>
-                <td>
-                    <a id="conocenos" href="">CONOCENOS</a>
-                </td>
-                <td>
-                    <a href="">
-                        <img id="icon3" src="Media/twitter.png" alt="">
-                    </a>
-                </td>
-                <td>
-                    <a href="">
-                        <img id="logo" src="Media/LOGO.png" alt="">
-                    </a>
-                </td>
-                <td>
-                    <a id="iniciosesion" href="login.html">INICIO SESION</a>
-                </td>
-                <td>
-                    <a id="registrate" href="registro.html">REGISTRO</a>
-                </td>
-                <td>
-                    <img id="iconosign" src="Media/sign.png" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a id="titulo">NETSEG</a>
-                </td>
-            </tr>
-        </table>
-    </div>
+    <header>
+
+        <div id="containerheader">
+
+            <div id="containerheaderizq">
+                <div id="headerproductos">
+                    <span id="productos">PRODUCTOS</span>
+                    <img src="Media/producto.png" alt="" class="iconheader">
+                </div>
+                <div id="headernoticias">
+                    <span id="noticias">NOTICIAS</span>
+                    <img src="Media/paper.png" alt="" class="iconheader">
+                </div>
+                <div id="headercontacto">
+                    <span id="contacto">CONTACTO</span>
+                    <img src="Media/twitter.png" alt="" class="iconheader">
+                </div>
+            </div>
+
+            <div id="containerheadermedio">
+                <img src="Media/LOGO.png" alt="" id="logoheader">
+                <span id="titulo">NETSEG</span>
+            </div>
+
+            <div id="containerheaderder">
+                <img src="Media/sign.png" alt="" id="sign">
+                <div id="inicioyregistro">
+                    <span>
+                        INICIO SESION
+                    </span>
+                    <span>
+                        REGISTRO
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
 
     <!-- Body -->
 
@@ -83,7 +87,7 @@
         <!-- Primer Pineapple -->
 
         <figure>
-            <div< /div>
+            <div</div>
                 <img id="pineaple1" src="Media/pineaple1.jpg" alt="">
                 <figcaption id="figpineaple1"><b>Cudy 4G WiFi Router <br>€119,90</b></figcaption>
                 <figcaption id="figpineaple2">
@@ -100,6 +104,8 @@
 
         <figure>
 
+            <div id="moverbug">
+
             <img id="pineaple2" src="Media/pineaple2.png" alt="">
             <figcaption id="figpineaple3"><b>WIFI PINEAPPLE MARK VII <br>€149,00</b></figcaption>
             <figcaption id="figpineaple4">
@@ -108,6 +114,8 @@
             </figcaption>
 
         </figure>
+
+        </div>
 
     </div>
 
@@ -138,12 +146,14 @@
 
                 Abusa de la confianza que las computadoras le dan a los teclados: más de 1000 palabras por minuto.
             </figcaption>
+            <div id="moverbug2">
             <figcaption id="figusb3"><b>BASH BUNNY <br>€119,99</b></figcaption>
             <figcaption id="figusb4">
                 La plataforma de ataque USB más potente del mundo. Imita varios dispositivos de confianza
                 simultáneamente. Despliegue múltiples cargas útiles.
                 Con el Bash Bunny, obtenga acceso físico a un dispositivo, y pase de Plug a Pwn en segundos.
             </figcaption>
+        </div>
 
         </figure>
 

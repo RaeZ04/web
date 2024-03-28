@@ -17,72 +17,76 @@
     <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
 
     <!-- Link hacia el archivo de estilos css -->
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="styles.css">
 
     <style type="text/css">
 
     </style>
 
     <script type="text/javascript">
+             window.addEventListener('scroll', function () {
+            const header = document.getElementById('containerheader');
+            const title = document.getElementById('titulo');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+                title.style.opacity = '0';
+            } else {
+                header.classList.remove('scrolled');
+                title.style.opacity = '1';
+            }
+        });
 
     </script>
 
 </head>
 
 <body>
-    <div class="header-container">
-        <table class="TablaHeader">
-            <tr>
-                <td>
-                    <a id="productos" href="">PRODUCTOS</a>
-                </td>
-                <td>
-                    <a href="">
-                        <img id="icon" src="Media/producto.png" alt="">
-                    </a>
-                </td>
-                <td>
-                    <a id="noticias" href="">NOTICIAS</a>
-                </td>
-                <td>
-                    <a href="">
-                        <img id="icon2" src="Media/paper.png" alt="">
-                    </a>
-                </td>
-                <td>
-                    <a id="conocenos" href="">CONOCENOS</a>
-                </td>
-                <td>
-                    <a href="">
-                        <img id="icon3" src="Media/twitter.png" alt="">
-                    </a>
-                </td>
-                <td>
-                    <a href="index.html">
-                        <img id="logo" src="Media/LOGO.png" alt="">
-                    </a>
-                </td>
-                <td>
-                    <a id="iniciosesion" href="login.html">INICIO SESION</a>
-                </td>
-                <td>
-                    <a id="registrate" href="registro.html">REGISTRO</a>
-                </td>
-                <td>
-                    <img id="iconosign" src="Media/sign.png" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="index.html" id="titulo">NETSEG</a>
-                </td>
-            </tr>
-        </table>
-    </div>
+     <!-- Header -->
+
+    <header>
+
+        <div id="containerheader">
+
+            <div id="containerheaderizq">
+                <div id="headerproductos">
+                    <span id="productos">PRODUCTOS</span>
+                    <img src="Media/producto.png" alt="" class="iconheader">
+                </div>
+                <div id="headernoticias">
+                    <span id="noticias">NOTICIAS</span>
+                    <img src="Media/paper.png" alt="" class="iconheader">
+                </div>
+                <div id="headercontacto">
+                    <span id="contacto">CONTACTO</span>
+                    <img src="Media/twitter.png" alt="" class="iconheader">
+                </div>
+            </div>
+
+            <div id="containerheadermedio">
+                <img src="Media/LOGO.png" alt="" id="logoheader">
+                <span id="titulo">NETSEG</span>
+            </div>
+
+            <div id="containerheaderder">
+                <img src="Media/sign.png" alt="" id="sign">
+                <div id="inicioyregistro">
+                    <span>
+                        INICIO SESION
+                    </span>
+                    <span>
+                        REGISTRO
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
     <div id="contenedor">
         <div id="central">
             <div id="login">
-                <div class="titulo">
+                <div class="titulo2">
                     Bienvenido
                 </div>
                 <form id="loginform">
