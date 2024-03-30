@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Formulario Login y Registro de Usuarios</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+
+        <div id="containerheader">
+
+            <div id="containerheaderizq">
+                <div id="headerproductos">
+                    <span id="productos">PRODUCTOS</span>
+                    <img src="Media/producto.png" alt="" class="iconheader">
+                </div>
+                <div id="headernoticias">
+                    <span id="noticias">NOTICIAS</span>
+                    <img src="Media/paper.png" alt="" class="iconheader">
+                </div>
+                <div id="headercontacto">
+                    <span id="contacto">CONTACTO</span>
+                    <img src="Media/twitter.png" alt="" class="iconheader">
+                </div>
+            </div>
+
+            <div id="containerheadermedio">
+                <img src="Media/LOGO.png" alt="" id="logoheader">
+                <span id="titulo">NETSEG</span>
+            </div>
+
+            <div id="containerheaderder">
+                <img src="Media/sign.png" alt="" id="sign">
+                <div id="inicioyregistro">
+                    <span>
+                        INICIO SESION
+                    </span>
+                    <span>
+                        REGISTRO
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+   <!-- Formularios -->
+    <div class="contenedor-formularios">
+        <!-- Links de los formularios -->
+        <ul class="contenedor-tabs">
+            <li class="tab tab-segunda active"><a href="#iniciar-sesion">Iniciar Sesión</a></li>
+            <li class="tab tab-primera"><a href="#registrarse">Registrarse</a></li>
+        </ul>
+
+        <!-- Contenido de los Formularios -->
+        <div class="contenido-tab">
+            <!-- Iniciar Sesion -->
+            <div id="iniciar-sesion">
+                <h1>Iniciar Sesión</h1>
+                <form action="#" method="post">
+                    <div class="contenedor-input">
+                        <label>
+                            Usuario <span class="req">*</span>
+                        </label>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <label>
+                            Contraseña <span class="req">*</span>
+                        </label>
+                        <input type="password" required>
+                    </div>
+                    <p class="forgot"><a href="#">Se te olvidó la contraseña?</a></p>
+                    <input type="submit" class="button button-block" value="Iniciar Sesión">
+                </form>
+            </div>
+
+            <!-- Registrarse -->
+            <div id="registrarse">
+                <h1>Registrarse</h1>
+                <form action="#" method="post">
+                    <div class="fila-arriba">
+                        <div class="contenedor-input">
+                            <label>
+                                Nombre <span class="req">*</span>
+                            </label>
+                            <input type="text" required >
+                        </div>
+
+                        <div class="contenedor-input">
+                            <label>
+                                Apellido <span class="req">*</span>
+                            </label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+                    <div class="contenedor-input">
+                        <label>
+                            Usuario <span class="req">*</span>
+                        </label>
+                        <input type="text" required>
+                    </div>
+                    <div class="contenedor-input">
+                            <label>
+                                Email <span class="req">*</span>
+                            </label>
+                        <input type="email" required>
+                    </div>
+                    <div class="contenedor-input">
+                        <label>
+                            Contraseña <span class="req">*</span>
+                        </label>
+                        <input type="password" required>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <label>
+                            Repetir Contraseña <span class="req">*</span>
+                        </label>
+                        <input type="password" required>
+                    </div>
+
+                    <input type="submit" class="button button-block" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <img id="imgfooter" src="Media/LOGO.png" alt="">
+                    </td>
+                    <td>
+                        <hr id="fohr1">
+                    </td>
+                    <td>
+                        <p id="infofooter"> INFORMACIÓN </p>
+                    </td>
+                    <td>
+                        <hr id="fohr2">
+                    </td>
+                    <td>
+                        <p id="explorafooter"> EXPLORA</p>
+                    </td>
+                    <td>
+                        <hr id="fohr3">
+                    </td>
+                    <td>
+                        <p id="aboutfooter"> ABOUT US</p>
+                    </td>
+                    <td>
+                        <hr id="fohr4">
+                    </td>
+                    <td>
+                        <p id="text1footer"> Pagina hecha por Sergio y Juan Carlos en el curso de DAW como trabajo para hacer una pagina web.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="textofot2">ABOUT</p>
+                    </td>
+                    <td>
+                        <p id="textofot3">PRODUCTOS</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="textofot4">SOPORTE</p>
+                    </td>
+                    <td>
+                        <p id="textofot5">NOTICIAS</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

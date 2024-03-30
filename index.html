@@ -13,20 +13,7 @@
 
 <body>
 
-    <script>
-        window.addEventListener('scroll', function () {
-            const header = document.getElementById('containerheader');
-            const title = document.getElementById('titulo');
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-                title.style.opacity = '0';
-            } else {
-                header.classList.remove('scrolled');
-                title.style.opacity = '1';
-            }
-        });
-        
-    </script>
+    
     <!-- Header -->
 
     <header>
@@ -221,7 +208,8 @@
             </table>
         </div>
     </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 

@@ -1,15 +1,42 @@
+//variables
+
+$body-bg: #a09f9f;
+$form-bg: #000000;
+$blanco: #fff;
+
+$color-principal: #6399bd;
+$color-principal-light: lighten($color-principal,5%);
+$color-principal-dark: darken($color-principal,5%);
+
+$gris-light: #a0b3b0;
+$gris: #ddd;
+
+$thin: 300;
+$normal: 400;
+$bold: 600;
+$br: 4px;
+
+$fuente-principal: 'Oswald', sans-serif;
+$fuente-secundaria: "Raleway", arial;
+
 body {
     background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
-    font-family: 'Oswald', sans-serif;
     box-sizing: border-box;
     height: 100rem;
+    background: $body-bg;
+    font-family: $fuente-principal;
 
 }
 a {
     text-decoration: none;
-    color: white;
+    color: $color-principal;
+    transition: .5s ease;
+    
+    &:hover {
+        color: $color-principal-dark;
+    }
 }
 
 ul {
@@ -23,7 +50,7 @@ ul {
     height: 12rem;
     justify-content: space-between;
     width: 100%;
-    position: fixed;
+    position: top;
     transition: height 0.3s ease;
 }
 
@@ -231,7 +258,167 @@ ul {
     bottom: 0.65vmax;
 
 }
+//login y registro
 
+.contenedor-formularios {
+    background: rgba($form-bg,.9);
+    padding: 30px;
+    max-width: 500px;
+    margin: 40px auto;
+    border-radius: $br;
+    box-shadow: 0 4px 10px 4px rgba($form-bg,.3);
+}
+
+.contenedor-tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+    
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+  
+    li a {
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        background: rgba($gris-light,.25);
+        color: $gris-light;
+        font-size: 20px;
+        float: left;
+        width: 42%;
+        text-align: center;
+        cursor: pointer;
+        transition: .5s ease;
+        
+        &:hover {
+            background: $color-principal-dark;
+            color: $blanco;
+        }
+    }
+    
+    .active a {
+        background: $color-principal;
+        color: $blanco;
+    }
+}
+
+.contenido-tab > div:last-child {
+    display: none;
+}
+
+
+h1 {
+    text-align: center;
+    color: $blanco;
+    font-weight: $thin;
+    margin: 0 0 40px;
+}
+
+label {
+    position: absolute;
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba($blanco,.5);
+    transition: all 0.25s ease;
+    -webkit-backface-visibility: hidden;
+    pointer-events: none;
+    font-size: 22px;
+    
+    .req {
+        margin: 2px;
+        color: $color-principal;
+    }
+}
+
+label.active {
+    transform: translateY(50px);
+    left: 2px;
+    font-size: 14px;
+    
+    .req {
+        opacity: 0;
+    }
+}
+
+label.highlight {
+    color: $blanco;
+}
+
+input {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid $gris-light;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: $blanco;
+    border-radius: 0;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    &:focus {
+        outline: none;
+        border-color: $color-principal;
+    }
+}
+
+.contenedor-input {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.fila-arriba {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    div {
+        float: left;
+        width: 48%;
+        margin-right: 4%;
+        
+        &:last-child { 
+            margin: 0;
+        }
+    }
+}
+
+.button {
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 2rem;
+    background: $color-principal;
+    color: $blanco;
+    transition: all .5s ease;
+    -webkit-appearance: none;
+    
+    &:hover, &:focus {
+        background: $color-principal-dark;
+    }
+}
+
+.button-block {
+    display: block;
+    width: 100%;
+}
+
+.forgot {
+    margin-top: -20px;
+    text-align: right;
+    margin-bottom: 20px;
+}
 /* USBS */
 
 #usb2{
@@ -323,8 +510,9 @@ ul {
     padding: 0;
     width: 100%;
     height: 100%;
+    
 }
-#titulo2 {
+.titulolog {
     font-size: 2.5vmax;
     color: #bbe1fa;
     text-align: center;
@@ -344,8 +532,8 @@ ul {
     -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
     box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
     
-    -moz-border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
     
     box-sizing: border-box;
 }
@@ -493,17 +681,18 @@ ul {
     bottom: 40vmax;
 
 }
+
 /*footer*/
 
 footer{
     background-color: black;
     height: 13vmax;
-    position: relative;
+    position: bottom;
     bottom: 10vmax;
     overflow: hidden;
 }
 .footer {
-    position: relative;
+    position: bottom;
     height: 10vmax;
     width: 98.5vmax;
     top: 75vmax;
@@ -624,7 +813,6 @@ footer{
     bottom: 9vmax;
     font-size: 0.75vmax;
 }
-/*login y registro FIN*/
 
 /* RESPONSIVE */
 @media (max-width: 1350px) {
