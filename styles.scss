@@ -443,7 +443,7 @@ input {
 }
 
 #spacer2 {
-    height: 3.5rem;
+    height: 1rem;
 }
 
 // BODY
@@ -653,7 +653,7 @@ footer {
     padding-bottom: 0.5vmax;
 }
 
-// Media Querys Index
+// responsive
 
 @media (max-width: 1520px){
     #videocontainer iframe {
@@ -1010,7 +1010,106 @@ footer {
     }
 
 }
+@media (max-width: 560px){
 
+    .contenedor-formularios {
+        background: rgba($form-bg, .9);
+        padding: 20px;
+        max-width: 400px;
+        margin: 40px auto;
+        border-radius: $br;
+        box-shadow: 0 4px 10px 4px rgba($form-bg, .3);
+    }
+    .contenedor-tabs {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 40px 0;
+    
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    
+        li a {
+            display: block;
+            text-decoration: none;
+            padding: 25px;
+            background: rgba($gris-light, .25);
+            color: $gris-light;
+            font-size: 17px;
+            float: left;
+            width: 37%;
+            text-align: center;
+            cursor: pointer;
+            transition: .5s ease;
+    
+            &:hover {
+                background: $color-principal-dark;
+                color: $blanco;
+            }
+        }
+    
+        .active a {
+            background: $color-principal;
+            color: $blanco;
+        }
+    }
+    
+    .contenido-tab>div:last-child {
+        display: none;
+    }
+    #footermedio1{
+        padding-left: 3vmax;
+        padding-right: 3vmax;
+        
+    }
+    
+    #footermedio2{
+        padding-left: 3vmax;
+        padding-right: 3vmax;
+    }
+
+    .textofooter{
+        font-size: 0.55vmax;
+    }
+
+    .textofooter2{
+        font-size: 0.55vmax;
+    }
+
+    .titulofooter{
+        font-size: 1vmax;
+    }
+
+    .iconheader{
+        width: 3.5vmax;
+        margin-left: 0.5vmax;
+        margin-left: 0.7vmax;
+    }
+
+    .iconheader3{
+        width: 2.75vmax;
+        margin-left: 0.5vmax;
+        margin-left: 0.7vmax;
+    }
+
+    .iconheader2{
+        width: 4vmax;
+        position: relative;
+        top: 0.5vmax;
+        margin-left: 1vmax;
+    }
+
+    .textoheader{
+        font-size: 1.1vmax;
+    }
+
+    #containerizq{
+        gap: 0.5vmax;
+    }
+
+}
 @media (max-width: 550px) {
 
     #footermedio1{
@@ -1218,7 +1317,71 @@ footer {
     }
 
 }
-
+@media (max-width: 430px) {
+    
+    #spacer1 {
+        height: 4rem;
+    }
+    h1 {
+        text-align: center;
+        color: $blanco;
+        font-weight: $thin;
+        margin: 0 0 40px;
+        font-size: 30px;
+    }
+    .contenedor-formularios {
+        background: rgba($form-bg, .9);
+        padding: 20px;
+        max-width: 300px;
+        margin: 40px auto;
+        border-radius: $br;
+        box-shadow: 0 4px 10px 4px rgba($form-bg, .3);
+    }
+    .contenedor-tabs {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 40px 0;
+    
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    
+        li a {
+            display: block;
+            text-decoration: none;
+            padding: 25px;
+            background: rgba($gris-light, .25);
+            color: $gris-light;
+            font-size: 12px;
+            float: left;
+            width: 32%;
+            text-align: center;
+            cursor: pointer;
+            transition: .5s ease;
+    
+            &:hover {
+                background: $color-principal-dark;
+                color: $blanco;
+            }
+        }
+    
+        .active a {
+            background: $color-principal;
+            color: $blanco;
+        }
+    }
+    
+    .contenido-tab>div:last-child {
+        display: none;
+    }
+    #footermedio1{
+        padding-left: 3vmax;
+        padding-right: 3vmax;
+        
+    }
+}
 @media (max-width: 400px) {
 
     #logofooter{
