@@ -3,159 +3,219 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        id="viewport">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>NetSeg</title>
 </head>
 
-
 <body>
 
-    
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('containerheader');
+            const title = document.getElementById('titulo');
+            if (window.scrollY > 20) {
+                header.classList.add('scrolled');
+                title.style.opacity = '0';
+            } else {
+                header.classList.remove('scrolled');
+                title.style.opacity = '1';
+            }
+        });
+
+    </script>
+
     <!-- Header -->
 
     <header>
 
         <div id="containerheader">
 
-            <div id="containerheaderizq">
-                <div id="headerproductos">
-                    <span id="productos">PRODUCTOS</span>
-                    <img src="Media/producto.png" alt="" class="iconheader">
+            <div id="containerizq">
+
+                <div id="containerproductos">
+
+                    <p class="textoheader">PRODUCTOS</p>
+                    <img class="iconheader" src="Media/producto.png" alt="">
+
                 </div>
-                <div id="headernoticias">
-                    <span id="noticias">NOTICIAS</span>
-                    <img src="Media/paper.png" alt="" class="iconheader">
+
+                <div id="containernoticias">
+
+                    <p class="textoheader">NOTICIAS</p>
+                    <img class="iconheader" src="Media/paper.png" alt="">
+
                 </div>
-                <div id="headercontacto">
-                    <span id="contacto">CONTACTO</span>
-                    <img src="Media/twitter.png" alt="" class="iconheader">
+
+                <div id="containercontacto">
+
+                    <p class="textoheader">CONTACTO</p>
+                    <img class="iconheader2" src="Media/twitter.png" alt="">
+
                 </div>
+
             </div>
 
-            <div id="containerheadermedio">
-                <img src="Media/LOGO.png" alt="" id="logoheader">
-                <span id="titulo">NETSEG</span>
+            <div id="containermedio">
+
+                <a href="index.html"><img id="logopagina" src="Media/LOGO.png" alt=""></a>
+                <a href="index.html"><p id="titulo">NetSeg</p></a>
+
             </div>
 
-            <div id="containerheaderder">
-                <img src="Media/sign.png" alt="" id="sign">
-                <div id="inicioyregistro">
-                    <span>
-                        INICIO SESION
-                    </span>
-                    <span>
-                        REGISTRO
-                    </span>
+            
+            <div id="containerder">
+
+                <a href="logYregistro.html"><img id="iconsign" src="Media/sign.png" alt=""></a>
+                <div>
+                    <a href="logYregistro.html"><p class="textoheader2">INICIAR SESIÓN</p></a>
+                    <a href="logYregistro.html"><p class="textoheader2">REGISTRATE</p></a>
                 </div>
+
             </div>
 
         </div>
 
     </header>
 
-    <!-- Body -->
 
-    <!-- Penetracion WIFi -->
+    <!-- Penetracion WIFI -->
 
-    <div>
-        <center> <img class="imgbanner" src="Media/fotoPlaneta.jpg" alt=""> </center>
-        <div id="cuadrogris">
-            <p id="texto1"> PENETRACIÓN WIFI </p>
-            <p id="texto2">
-                Optimiza tus evaluaciones de seguridad en las redes Wi-Fi con las plataformas líderes del sector.
-                Potencia a tu equipo rojo con el avanzado Wifi Pineapple® y accesorios diseñados para un rendimiento
-                empresarial excepcional, ofreciendo soluciones integrales que garantizan una defensa robusta y proactiva
-                contra las amenazas en el panorama de las redes Wi-Fi empresariales.</p>
+    <div id="centrarbody">
+
+        <div class="apartado1">
+
+            <div id="cuadrogris">
+
+                <div id="textocuadrogris">
+
+                    <p id="texto1"> PENETRACIÓN WIFI </p>
+                    <p id="texto2">
+                        Optimiza tus evaluaciones de seguridad en las redes Wi-Fi con las plataformas líderes del
+                        sector.
+                        Potencia a tu equipo rojo con el avanzado Wifi Pineapple® y accesorios diseñados para un
+                        rendimiento
+                        empresarial excepcional, ofreciendo soluciones integrales que garantizan una defensa robusta y
+                        proactiva
+                        contra las amenazas en el panorama de las redes Wi-Fi empresariales.
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <!-- Primer Pineapple -->
+        <div id="articulos">
 
-        <figure>
-            <div</div>
-                <img id="pineaple1" src="Media/pineaple1.jpg" alt="">
-                <figcaption id="figpineaple1"><b>Cudy 4G WiFi Router <br>€119,90</b></figcaption>
-                <figcaption id="figpineaple2">
+            <div id="art1">
+
+                <img id="imagenart" src="Media/pineaple1.jpg" alt="">
+                <p id="textoarticulo1"><b>Cudy 4G WiFi Router <br>€119,90</b></p>
+                <p id="textoarticulo2">
+
                     El router Cudy 4G LTE proporciona una solución de conectividad ágil y eficaz mediante la red móvil
                     4G,
                     asegurando un acceso rápido a internet en áreas remotas o con limitada infraestructura de banda
                     ancha
                     tradicional.
-                </figcaption>
 
-        </figure>
+                </p>
 
-        <!-- Segundo Pineapple -->
+            </div>
 
-        <figure>
+            <div id="art2">
 
-            <div id="moverbug">
+                <img id="imagenart2" src="Media/pineaple2.png" alt="">
+                <p id="textoarticulo1"><b>WIFI PINEAPPLE MARK VII <br>€149,00</b></b></p>
+                <p id="textoarticulo2">
 
-            <img id="pineaple2" src="Media/pineaple2.png" alt="">
-            <figcaption id="figpineaple3"><b>WIFI PINEAPPLE MARK VII <br>€149,00</b></figcaption>
-            <figcaption id="figpineaple4">
-                La mundialmente famosa plataforma WiFi Man-In-The-Middle. Imitar redes de confianza. Haga clic en &
-                transfiere clientes de forma encubierta a tu Pineapple.
-            </figcaption>
+                    La mundialmente famosa plataforma WiFi Man-In-The-Middle. Imitar redes de confianza. Haga clic en &
+                    transfiere clientes de forma encubierta a tu Pineapple.
 
-        </figure>
+                </p>
+
+            </div>
 
         </div>
 
     </div>
 
-    <!-- HOTPLUG ATTACK -->
+    <div id="spacer1"></div>
 
-    <div class="segundoapartado">
-        <center> <img class="imgbanner" src="Media/banner2.png" alt=""> </center>
+    <div class="apartado2">
+
         <div id="cuadrogris2">
-            <p id="texto1"> ATAQUE HOTPLUG </p>
-            <p id="texto2">
-                <br>
-                Explora las técnicas de conexión furtiva, inyección USB, automatización encubierta, scripting sigiloso,
-                manipulación dinámica e infiltración plug-and-play en nuestro fascinante análisis de hacking de USBs en
-                ciberseguridad.
-            </p>
+
+            <div id="textocuadrogris">
+
+                <p id="texto1"> ATAQUE HOTPLUG </p>
+                <p id="texto2">
+                    Explora las técnicas de conexión furtiva, inyección USB, automatización encubierta, scripting sigiloso,
+                    manipulación dinámica e infiltración plug-and-play en nuestro fascinante análisis de hacking de USBs en
+                    ciberseguridad.
+                </p>
+
+            </div>
+
         </div>
 
-        <!-- USBS -->
+    </div>
 
-        <figure>
+    <div id="articulos">
 
-            <img id="usb1" src="Media/usb1.png" alt="">
-            <img id="usb2" src="Media/usb2.png" alt="">
-            <figcaption id="figusb1"><b>USB RUBBER DUCKY <br>€79.99</b></figcaption>
-            <figcaption id="figusb2">
+        <div id="art1">
+
+            <img id="imagenart" src="Media/usb1.png" alt="">
+            <p id="textoarticulo1"><b>USB RUBBER DUCKY <br>€79.99</b></p>
+            <p id="textoarticulo2">
+
                 Dispositivo de inyección de pulsaciones de teclas USB de fama mundial. Lo que podrías hacer en minutos,
                 el patito de goma lo hace en milisegundos.
 
                 Abusa de la confianza que las computadoras le dan a los teclados: más de 1000 palabras por minuto.
-            </figcaption>
-            <div id="moverbug2">
-            <figcaption id="figusb3"><b>BASH BUNNY <br>€119,99</b></figcaption>
-            <figcaption id="figusb4">
+
+            </p>
+
+        </div>
+
+        <div id="art2">
+
+            <img id="imagenart2" src="Media/usb2.png" alt="">
+            <p id="textoarticulo1"><b>BASH BUNNY <br>€119,99</b></b></p>
+            <p id="textoarticulo2">
+
                 La plataforma de ataque USB más potente del mundo. Imita varios dispositivos de confianza
                 simultáneamente. Despliegue múltiples cargas útiles.
                 Con el Bash Bunny, obtenga acceso físico a un dispositivo, y pase de Plug a Pwn en segundos.
-            </figcaption>
+
+            </p>
+
         </div>
 
-        </figure>
-
     </div>
+
+    <div id="spacer1"></div>
 
     <div id="videoindex">
-        <div class="video-container">
+
+        <div id="videocontainer">
+
             <iframe width="1500" height="800"
-                src="https://www.youtube.com/embed/uQ4ng-Otxx8?si=aoRD4QKNcqTy4ril" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-            </iframe>
+            src="https://www.youtube.com/embed/uQ4ng-Otxx8?si=aoRD4QKNcqTy4ril" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+
         </div>
+
     </div>
+
+    <div id="spacer1"></div>
 
     <footer>
         <div>
@@ -208,9 +268,7 @@
             </table>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="main.js"></script>
-</body>
 
+</body>
 
 </html>

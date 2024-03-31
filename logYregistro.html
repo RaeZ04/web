@@ -16,7 +16,24 @@
 </head>
 
 <body>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('containerheader');
+            const title = document.getElementById('titulo');
+            if (window.scrollY > 20) {
+                header.classList.add('scrolled');
+                title.style.opacity = '0';
+            } else {
+                header.classList.remove('scrolled');
+                title.style.opacity = '1';
+            }
+        });
+
+    </script>
+
     <!-- Header -->
+
     <header>
 
         <div id="containerheader">
@@ -48,15 +65,17 @@
 
             <div id="containermedio">
 
-                <img id="logopagina" src="Media/LOGO.png" alt="">
-                <p id="titulo">NetSeg</p>
+                <a href="index.html"><img id="logopagina" src="Media/LOGO.png" alt=""></a>
+                <a href="index.html"><p id="titulo">NetSeg</p></a>
 
             </div>
 
-
+            
             <div id="containerder">
 
-                
+                <a href="index.html"><img id="iconsign" src="Media/menu.png" alt=""></a>
+                <div>
+                    <a href="index.html"><p class="textoheader2">INICIO</p></a>
                 </div>
 
             </div>
@@ -64,6 +83,11 @@
         </div>
 
     </header>
+
+    <div id="spacer1"></div>
+    <div id="spacer1"></div>
+    <div id="spacer2"></div>
+
     <!-- Formularios -->
     <div class="contenedor-formularios">
         <!-- Links de los formularios -->
@@ -146,6 +170,12 @@
             </div>
         </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+    <div id="spacer1"></div>
+
     <footer>
         <div>
             <table>
@@ -175,8 +205,7 @@
                         <hr id="fohr4">
                     </td>
                     <td>
-                        <p id="text1footer"> Pagina hecha por Sergio y Juan Carlos en el curso de DAW como trabajo para
-                            hacer una pagina web.</p>
+                        <p id="text1footer"> Pagina hecha por Sergio y Juan Carlos en el curso de DAW como trabajo para hacer una pagina web.</p>
                     </td>
                 </tr>
                 <tr>
@@ -198,9 +227,6 @@
             </table>
         </div>
     </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="main.js"></script>
 
 </body>
 
