@@ -3,7 +3,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100rem;
+  height: -moz-fit-content;
+  height: fit-content;
   background: #a09f9f;
   font-family: "Oswald", sans-serif;
 }
@@ -25,206 +26,104 @@ ul {
 #containerheader {
   display: flex;
   background-color: black;
-  height: 12rem;
-  justify-content: space-between;
+  height: 22%;
   width: 100%;
   position: top;
   transition: height 0.3s ease;
-}
-
-/* IZQUIERDA */
-#containerheaderizq {
-  display: flex;
+  z-index: 1;
   justify-content: space-between;
-  font-size: 1.3rem;
-  flex: 1;
-  max-width: 35rem;
-  padding-left: 5rem;
-  gap: 1rem;
+  overflow: hidden;
 }
 
-#headerproductos,
-#headernoticias,
-#headercontacto {
-  display: flex;
-  color: white;
-  padding-top: 4rem;
-  justify-content: space-evenly;
-  flex: 1;
-  max-width: 12rem;
+#containerheader.scrolled {
+  height: 17%;
 }
 
-/* MEDIO */
-#containerheadermedio {
-  display: flex;
-  padding-top: 1rem;
-  flex: 1;
-  max-width: 10rem;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 15rem;
-  margin-left: 10rem;
-}
-
-/* DERECHA */
-#containerheaderder {
+#containerizq {
   display: flex;
   flex-direction: row;
-  padding-top: 1.5rem;
-  justify-content: end;
-  margin-right: 5rem;
-  width: 25rem;
+  margin-left: 2vmax;
+  width: 33vmax;
+}
+
+#containerproductos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.75vmax;
+}
+
+.iconheader {
+  width: 2vmax;
+  margin-left: 0.5vmax;
+}
+
+.iconheader2 {
+  width: 2.75vmax;
+  margin-left: 0.5vmax;
+}
+
+.textoheader {
+  color: white;
+  font-size: 1vmax;
+  margin-left: 1vmax;
+}
+
+.textoheader2 {
+  color: white;
+  font-size: 1vmax;
+  margin-left: 1vmax;
+  margin-bottom: 0.25vmax;
+  margin-top: 0.25vmax;
+}
+
+#containernoticias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.75vmax;
+}
+
+#containercontacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#containermedio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 32vmax;
+  margin-top: 2.55vmax;
+}
+
+#containerder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5vmax;
+  margin-bottom: 3vmax;
+  width: 32vmax;
+  justify-content: flex-end;
+}
+
+#logopagina {
+  width: 7.25vmax;
 }
 
 #titulo {
   color: white;
-  font-size: 2rem;
-  text-align: center;
-  padding-top: 0.5rem;
-  transition: opacity 0.3s ease;
+  font-size: 1.55vmax;
+  margin-top: 0;
 }
 
-.iconheader {
-  height: 3rem;
-  padding-bottom: rem;
-  padding-left: 0.5rem;
-}
-
-#logoheader {
-  height: 7rem;
-  width: 8.4rem;
-}
-
-#sign {
-  background-color: rgb(29, 28, 28);
-  border: 0.1rem solid white;
-  max-height: 4.5rem;
-  border-radius: 0.8rem;
-}
-
-#inicioyregistro {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding-top: 1rem;
-  padding-left: 1rem;
-  white-space: nowrap;
-}
-
-#containerheader.scrolled {
-  height: 9.3rem;
-}
-
-/* NUEVO HEADER FIN*/
-#productos {
-  text-decoration: none;
-  color: white;
-  margin-left: 5vmax;
-  font-size: 1.1vmax;
-  position: relative;
-  top: 1vmax;
-}
-
-#noticias {
-  text-decoration: none;
-  color: white;
-  margin-left: 2.8vmax;
-  font-size: 1.1vmax;
-  position: relative;
-  top: 1vmax;
-}
-
-#conocenos {
-  text-decoration: none;
-  color: white;
-  margin-left: 2.8vmax;
-  font-size: 1.1vmax;
-  position: relative;
-  top: 1vmax;
-}
-
-#logo {
-  height: 6vmax;
-  width: 6.5vmax;
-  margin-left: 15vmax;
-}
-
-#iconosign {
-  background-color: rgb(12, 12, 12);
-  border: solid 1px;
-  border-color: white;
-  width: 4vmax;
-  border-radius: 0.6vmax;
-  margin-left: 23vmax;
-}
-
-#iniciosesion {
-  text-decoration: none;
-  color: white;
-  font-size: 0.9vmax;
-  position: relative;
-  bottom: 1vmax;
-  left: 36.4vmax;
-}
-
-#registrate {
-  text-decoration: none;
-  color: white;
-  font-size: 0.9vmax;
-  position: relative;
-  bottom: 1vmax;
-  left: 31.5vmax;
-  top: 0.6vmax;
-}
-
-.imgbanner {
-  height: 23vmax;
-  margin-top: 20vmax;
-  width: 98%;
-  border-radius: 0.4vmax;
-}
-
-#cuadrogris {
-  background-color: rgba(51, 51, 51, 0.6);
-  height: 18vmax;
-  width: 30vmax;
-  position: absolute;
-  top: 22.5vmax;
-  left: 10vmax;
-  text-align: center;
-  border-radius: 1vmax;
-}
-
-#cuadrogris2 {
-  background-color: rgba(51, 51, 51, 0.6);
-  height: 19vmax;
-  width: 30vmax;
-  position: absolute;
-  top: 22.5vmax;
-  right: 10vmax;
-  text-align: center;
-  border-radius: 1vmax;
-}
-
-#texto1 {
-  color: white;
-  font-size: 2vmax;
-  filter: opacity(1);
-  margin-top: 2vmax;
-  font-family: "Roboto";
-}
-
-#texto2 {
-  color: white;
-  margin-left: 3vmax;
-  margin-right: 3vmax;
-  text-align: start;
-  font-size: 1vmax;
-  filter: opacity(90%);
-  font-family: "Roboto";
-  line-height: 1.4vmax;
-  position: relative;
-  bottom: 0.65vmax;
+#iconsign {
+  border: 0.1vmax solid white;
+  border-radius: 0.5vmax;
+  width: 3.8vmax;
+  height: 3.8vmax;
 }
 
 .contenedor-formularios {
@@ -232,7 +131,7 @@ ul {
   padding: 30px;
   max-width: 500px;
   margin: 40px auto;
-  border-radius: 4px;
+  border-radius: 6px;
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -625,21 +524,9 @@ input:focus {
 footer {
   background-color: black;
   height: 13vmax;
-  position: bottom;
-  bottom: 10vmax;
   overflow: hidden;
-}
-
-.footer {
-  height: 10vmax;
-  width: 98.5vmax;
-  top: 75vmax;
-  left: -0.6vmax;
-  background: linear-gradient(to bottom, #190c4a 5%, #00020a 95%);
-  justify-content: center;
-  text-align: center;
-  color: white;
-  text-decoration: none;
+  position: fixed, bottom;
+  width: 100%;
 }
 
 #imgfooter {

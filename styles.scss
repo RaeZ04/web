@@ -5,8 +5,8 @@ $form-bg: #000000;
 $blanco: #fff;
 
 $color-principal: #6399bd;
-$color-principal-light: lighten($color-principal,5%);
-$color-principal-dark: darken($color-principal,5%);
+$color-principal-light: lighten($color-principal, 5%);
+$color-principal-dark: darken($color-principal, 5%);
 
 $gris-light: #a0b3b0;
 $gris: #ddd;
@@ -14,7 +14,7 @@ $gris: #ddd;
 $thin: 300;
 $normal: 400;
 $bold: 600;
-$br: 4px;
+$br: 6px;
 
 $fuente-principal: 'Oswald', sans-serif;
 $fuente-secundaria: "Raleway", arial;
@@ -24,16 +24,17 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100rem;
+    height: fit-content;
     background: $body-bg;
     font-family: $fuente-principal;
 
 }
+
 a {
     text-decoration: none;
     color: $color-principal;
     transition: .5s ease;
-    
+
     &:hover {
         color: $color-principal-dark;
     }
@@ -42,249 +43,140 @@ a {
 ul {
     list-style-type: none;
 }
+
 /* NUEVO HEADER */
 
 #containerheader {
     display: flex;
     background-color: black;
-    height: 12rem;
-    justify-content: space-between;
+    height: 22%;
     width: 100%;
     position: top;
     transition: height 0.3s ease;
-}
-
-/* IZQUIERDA */
-
-#containerheaderizq {
-    display: flex;
+    z-index: 1;
     justify-content: space-between;
-    font-size: 1.3rem;
-    flex: 1;
-    max-width: 35rem;
-    padding-left: 5rem;
-    gap: 1rem;
-}
-
-#headerproductos,
-#headernoticias,
-#headercontacto {
-    display: flex;
-    color: white;
-    padding-top: 4rem;
-    justify-content: space-evenly;
-    flex: 1;
-    max-width: 12rem;
-}
-
-/* MEDIO */
-
-#containerheadermedio {
-    display: flex;
-    padding-top: 1rem;
-    flex: 1;
-    max-width: 10rem;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 15rem;
-    margin-left: 10rem;
-}
-
-/* DERECHA */
-
-#containerheaderder {
-    display: flex;
-    flex-direction: row;
-    padding-top: 1.5rem;
-    justify-content: end;
-    margin-right: 5rem;
-    width: 25rem;
-}
-
-
-#titulo {
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-    padding-top: 0.5rem;
-    transition: opacity 0.3s ease;
-}
-
-.iconheader {
-    height: 3rem;
-    padding-bottom: rem;
-    padding-left: 0.5rem;
-}
-
-#logoheader {
-    height: 7rem;
-    width: 8.4rem;
-}
-
-#sign {
-    background-color: rgb(29, 28, 28);
-    border: 0.1rem solid white;
-    max-height: 4.5rem;
-    border-radius: 0.8rem;
-}
-
-#inicioyregistro {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
-    padding-left: 1rem;
-    white-space: nowrap;
+    overflow: hidden;
 }
 
 #containerheader.scrolled {
-    height: 9.3rem;
+    height: 17%;
 }
-/* NUEVO HEADER FIN*/
 
+#containerizq {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2vmax;
+    width: 33vmax;
+}
 
-#productos {
-    text-decoration: none;
+#containerproductos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.75vmax;
+
+}
+
+.iconheader {
+    width: 2vmax;
+    margin-left: 0.5vmax;
+}
+
+.iconheader2 {
+    width: 2.75vmax;
+    margin-left: 0.5vmax;
+}
+
+.textoheader {
     color: white;
-    margin-left: 5vmax;
-    font-size: 1.1vmax;
-    position: relative;
-    top: 1vmax;
-}
-
-#noticias{
-    text-decoration: none;
-    color: white;
-    margin-left: 2.8vmax;
-    font-size: 1.1vmax;
-    position: relative;
-    top: 1vmax;
-}
-
-#conocenos{
-    text-decoration: none;
-    color: white;
-    margin-left: 2.8vmax;
-    font-size: 1.1vmax;
-    position: relative;
-    top: 1vmax;
-}
-
-#logo{
-    height: 6vmax;
-    width: 6.5vmax;
-    margin-left: 15vmax;
-
-}
-
-#iconosign{
-    background-color: rgb(12, 12, 12);
-    border: solid 1px;
-    border-color: white;
-    width: 4vmax;
-    border-radius: 0.6vmax;
-    margin-left: 23vmax;
-
-}
-
-#iniciosesion{
-    text-decoration: none;
-    color: white;
-    font-size: 0.9vmax;
-    position: relative;
-    bottom: 1vmax;
-    left: 36.4vmax;
-
-}
-
-#registrate{
-    text-decoration: none;
-    color: white;
-    font-size: 0.9vmax;
-    position: relative;
-    bottom: 1vmax;
-    left: 31.5vmax;
-    top: 0.6vmax;
-}
-
-.imgbanner{
-    height: 23vmax;
-    margin-top: 20vmax;
-    width: 98%;
-    border-radius: 0.4vmax;
-}
-
-#cuadrogris{
-    background-color: rgba(51, 51, 51, 0.6);
-    height: 18vmax;
-    width: 30vmax;
-    position: absolute;
-    top: 22.5vmax;
-    left: 10vmax;
-    text-align: center;
-    border-radius: 1vmax;
-}
-
-#cuadrogris2{
-    background-color: rgba(51, 51, 51, 0.6);
-    height: 19vmax;
-    width: 30vmax;
-    position: absolute;
-    top: 22.5vmax;
-    right: 10vmax;
-    text-align: center;
-    border-radius: 1vmax;
-}
-
-#texto1{
-    color: white;
-    font-size: 2vmax;
-    filter: opacity(1);
-    margin-top: 2vmax;
-    font-family: 'Roboto';
-
-}
-
-#texto2{
-    color: white;
-    margin-left: 3vmax;
-    margin-right: 3vmax;
-    text-align: start;
     font-size: 1vmax;
-    filter: opacity(90%);
-    font-family: 'Roboto';
-    line-height: 1.4vmax;
-    position: relative;
-    bottom: 0.65vmax;
-
+    margin-left: 1vmax;
 }
+
+.textoheader2 {
+    color: white;
+    font-size: 1vmax;
+    margin-left: 1vmax;
+    margin-bottom: 0.25vmax;
+    margin-top: 0.25vmax;
+}
+
+#containernoticias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.75vmax;
+}
+
+#containercontacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#containermedio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 32vmax;
+    margin-top: 2.55vmax;
+}
+
+#containerder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5vmax;
+    margin-bottom: 3vmax;
+    width: 32vmax;
+    justify-content: flex-end;
+}
+
+#logopagina {
+    width: 7.25vmax;
+}
+
+#titulo {
+    color: white;
+    font-size: 1.55vmax;
+    margin-top: 0;
+}
+
+#iconsign {
+    border: 0.1vmax solid white;
+    border-radius: 0.5vmax;
+    width: 3.8vmax;
+    height: 3.8vmax;
+}
+
 //login y registro
 
 .contenedor-formularios {
-    background: rgba($form-bg,.9);
+    background: rgba($form-bg, .9);
     padding: 30px;
     max-width: 500px;
     margin: 40px auto;
     border-radius: $br;
-    box-shadow: 0 4px 10px 4px rgba($form-bg,.3);
+    box-shadow: 0 4px 10px 4px rgba($form-bg, .3);
 }
 
 .contenedor-tabs {
     list-style: none;
     padding: 0;
     margin: 0 0 40px 0;
-    
+
     &:after {
         content: "";
         display: table;
         clear: both;
     }
-  
+
     li a {
         display: block;
         text-decoration: none;
         padding: 20px;
-        background: rgba($gris-light,.25);
+        background: rgba($gris-light, .25);
         color: $gris-light;
         font-size: 20px;
         float: left;
@@ -292,20 +184,20 @@ ul {
         text-align: center;
         cursor: pointer;
         transition: .5s ease;
-        
+
         &:hover {
             background: $color-principal-dark;
             color: $blanco;
         }
     }
-    
+
     .active a {
         background: $color-principal;
         color: $blanco;
     }
 }
 
-.contenido-tab > div:last-child {
+.contenido-tab>div:last-child {
     display: none;
 }
 
@@ -321,12 +213,12 @@ label {
     position: absolute;
     transform: translateY(6px);
     left: 13px;
-    color: rgba($blanco,.5);
+    color: rgba($blanco, .5);
     transition: all 0.25s ease;
     -webkit-backface-visibility: hidden;
     pointer-events: none;
     font-size: 22px;
-    
+
     .req {
         margin: 2px;
         color: $color-principal;
@@ -337,7 +229,7 @@ label.active {
     transform: translateY(50px);
     left: 2px;
     font-size: 14px;
-    
+
     .req {
         opacity: 0;
     }
@@ -363,6 +255,7 @@ input {
     border-radius: 0;
     transition: all 0.5s ease;
     border-radius: 5px;
+
     &:focus {
         outline: none;
         border-color: $color-principal;
@@ -385,8 +278,8 @@ input {
         float: left;
         width: 48%;
         margin-right: 4%;
-        
-        &:last-child { 
+
+        &:last-child {
             margin: 0;
         }
     }
@@ -403,8 +296,9 @@ input {
     color: $blanco;
     transition: all .5s ease;
     -webkit-appearance: none;
-    
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         background: $color-principal-dark;
     }
 }
@@ -419,9 +313,10 @@ input {
     text-align: right;
     margin-bottom: 20px;
 }
+
 /* USBS */
 
-#usb2{
+#usb2 {
     position: relative;
     top: 1.7vmax;
     left: 35.5vmax;
@@ -429,7 +324,7 @@ input {
     width: 19vmax;
 }
 
-#figusb3{
+#figusb3 {
     position: relative;
     bottom: 11.6vmax;
     margin-left: 24.4vmax;
@@ -437,7 +332,7 @@ input {
     font-size: 1vmax;
 }
 
-#figusb4{
+#figusb4 {
     position: relative;
     left: 12.3vmax;
     bottom: 10.6vmax;
@@ -446,7 +341,7 @@ input {
     margin-right: 40vmax;
 }
 
-#usb1{
+#usb1 {
     position: relative;
     left: 25vmax;
     height: 16vmax;
@@ -454,7 +349,7 @@ input {
     margin-top: 3vmax;
 }
 
-#figusb1{
+#figusb1 {
     position: relative;
     right: 14vmax;
     margin-top: 1vmax;
@@ -462,7 +357,7 @@ input {
     font-size: 1vmax;
 }
 
-#figusb2{
+#figusb2 {
     position: relative;
     right: 14.5vmax;
     margin-top: 1vmax;
@@ -485,14 +380,14 @@ input {
     width: 90vmax;
 }
 
-#moverbug{
+#moverbug {
 
     position: relative;
     bottom: 5.3vmax;
 
 }
 
-#moverbug2{
+#moverbug2 {
 
     position: relative;
     bottom: 7.5vmax;
@@ -505,19 +400,21 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    
+
 }
+
 .titulolog {
     font-size: 2.5vmax;
     color: #bbe1fa;
     text-align: center;
     margin-bottom: 20px;
 }
+
 #central {
     max-width: 320px;
     width: 100%;
@@ -527,14 +424,14 @@ input {
     width: 100%;
     padding: 50px 30px;
     background-color: #050d12;
-    
-    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-    
+
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
-    
+
     box-sizing: border-box;
 }
 
@@ -542,16 +439,16 @@ input {
     font-family: 'Overpass', sans-serif;
     font-size: 110%;
     color: #1b262c;
-    
+
     display: block;
     width: 100%;
     height: 40px;
-    
+
     margin-bottom: 10px;
     padding: 5px 5px 5px 10px;
-    
+
     box-sizing: border-box;
-    
+
     border: none;
     border-radius: 3px 3px 3px 3px;
     -moz-border-radius: 3px 3px 3px 3px;
@@ -566,28 +463,28 @@ input {
 #login button {
     font-family: 'Overpass', sans-serif;
     font-size: 110%;
-    color:#1b262c;
+    color: #1b262c;
     width: 100%;
     height: 40px;
     border: none;
-    
+
     border-radius: 3px 3px 3px 3px;
     -moz-border-radius: 3px 3px 3px 3px;
     -webkit-border-radius: 3px 3px 3px 3px;
-    
+
     background-color: #bbe1fa;
-    
+
     margin-top: 10px;
 }
 
 #login button:hover {
     background-color: #0f4c75;
-    color:#bbe1fa;
+    color: #bbe1fa;
 }
 
 .pie-form {
     font-size: 90%;
-    text-align: center;    
+    text-align: center;
     margin-top: 15px;
 }
 
@@ -619,9 +516,10 @@ input {
 .inferior a:hover {
     color: #3282b8;
 }
+
 /* Pineapple 1 */
 
-#pineaple1{
+#pineaple1 {
     position: relative;
     left: 25vmax;
     height: 16vmax;
@@ -629,7 +527,7 @@ input {
     margin-top: 3vmax;
 }
 
-#figpineaple1{
+#figpineaple1 {
     position: relative;
     right: 14vmax;
     margin-top: 1vmax;
@@ -637,7 +535,7 @@ input {
     font-size: 1vmax;
 }
 
-#figpineaple2{
+#figpineaple2 {
     position: relative;
     right: 14.5vmax;
     margin-top: 1vmax;
@@ -648,7 +546,7 @@ input {
 
 /* Pineapple 2 */
 
-#pineaple2{
+#pineaple2 {
     position: relative;
     left: 50vmax;
     bottom: 30vmax;
@@ -656,7 +554,7 @@ input {
     width: 19vmax;
 }
 
-#figpineaple3{
+#figpineaple3 {
     position: relative;
     position: relative;
     bottom: 30vmax;
@@ -665,7 +563,7 @@ input {
     font-size: 1vmax;
 }
 
-#figpineaple4{
+#figpineaple4 {
     position: relative;
     left: 12.7vmax;
     bottom: 29.3vmax;
@@ -675,7 +573,7 @@ input {
     margin-right: 40vmax;
 }
 
-.segundoapartado{
+.segundoapartado {
 
     position: relative;
     bottom: 40vmax;
@@ -684,36 +582,24 @@ input {
 
 /*footer*/
 
-footer{
+footer {
     background-color: black;
     height: 13vmax;
-    position: bottom;
-    bottom: 10vmax;
     overflow: hidden;
-}
-.footer {
-
-    height: 10vmax;
-    width: 98.5vmax;
-    top: 75vmax;
-    left: -0.6vmax;
-    background: linear-gradient(to bottom, #190c4a 5%, #00020a 95%);
-    justify-content: center;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    
+    position: fixed,bottom;
+    width: 100%;
 }
 
-#imgfooter{
+
+
+#imgfooter {
     width: 8vmax;
     margin-top: 2.5vmax;
     margin-left: 5vmax;
     position: relative;
-
 }
 
-#fohr1{
+#fohr1 {
     height: 10vmax;
     border-color: black;
     position: relative;
@@ -722,58 +608,55 @@ footer{
     border-bottom: 0;
 }
 
-#infofooter{
+#infofooter {
     color: rgb(255, 255, 255);
     position: relative;
     left: 10vmax;
     bottom: 3.2vmax;
     font-size: 1.1vmax;
-
 }
 
-#fohr2{
+#fohr2 {
     height: 10vmax;
     border-color: black;
     position: relative;
     left: 15vmax;
-    top: 1vmax
+    top: 1vmax;
 }
 
-#explorafooter{
+#explorafooter {
     color: rgb(255, 255, 255);
     position: relative;
     left: 20vmax;
     bottom: 3.2vmax;
     font-size: 1.1vmax;
-
 }
 
-#fohr3{
+#fohr3 {
     height: 10vmax;
     border-color: black;
     position: relative;
     left: 25vmax;
-    top: 1vmax
+    top: 1vmax;
 }
 
-#aboutfooter{
+#aboutfooter {
     color: rgb(255, 255, 255);
     position: relative;
     left: 34vmax;
     top: 1vmax;
     font-size: 1.1vmax;
-
 }
 
-#fohr4{
+#fohr4 {
     height: 1.5vmax;
     border-color: black;
     position: relative;
     left: 35vmax;
-    top: 1vmax
+    top: 1vmax;
 }
 
-#text1footer{
+#text1footer {
     color: rgb(180, 180, 180);
     position: relative;
     left: 36vmax;
@@ -782,25 +665,23 @@ footer{
     width: 10vmax;
 }
 
-#textofot2{
+#textofot2 {
     color: rgb(180, 180, 180);
     position: relative;
     left: 28vmax;
     bottom: 8vmax;
     font-size: 0.75vmax;
-
 }
 
-#textofot3{
+#textofot3 {
     color: rgb(180, 180, 180);
     position: relative;
     left: 30vmax;
     bottom: 8vmax;
     font-size: 0.75vmax;
-
 }
 
-#textofot4{
+#textofot4 {
     color: rgb(180, 180, 180);
     position: relative;
     left: 28vmax;
@@ -808,13 +689,14 @@ footer{
     font-size: 0.75vmax;
 }
 
-#textofot5{
+#textofot5 {
     color: rgb(180, 180, 180);
     position: relative;
     left: 30vmax;
     bottom: 9vmax;
     font-size: 0.75vmax;
 }
+
 
 /* RESPONSIVE */
 @media (max-width: 1350px) {
@@ -1028,7 +910,7 @@ footer{
 
     @media (max-width: 550px) {
 
-        
+
 
         #contacto {
             display: none;
@@ -1045,7 +927,7 @@ footer{
         #containerheaderizq {
             gap: 0.5rem;
             padding-left: 1.3rem;
-            
+
         }
 
         .iconheader {
@@ -1115,7 +997,7 @@ footer{
             gap: 1rem;
             padding-left: 0.5rem;
             justify-content: space-evenly;
-            
+
         }
 
         .iconheader {
@@ -1124,14 +1006,14 @@ footer{
             margin: 0px;
             padding: 0px;
             gap: 0px;
-    
+
         }
 
         #containerheadermedio {
             /* margin-right: 2rem; */
             margin-left: 1rem;
             padding-top: 2rem;
-            margin-right:0px ;
+            margin-right: 0px;
             padding-right: 30px;
         }
 
@@ -1145,7 +1027,7 @@ footer{
             padding-left: 0px;
             margin-left: 0px;
             padding-right: 20px;
-            
+
         }
 
         #titulo {
@@ -1165,7 +1047,7 @@ footer{
         #inicioyregistro {
             padding-top: 0.5rem;
             font-size: 0.75rem;
-            
+
         }
 
     }

@@ -38,6 +38,7 @@ $(document).ready(function(){
         $(target).fadeIn(600);
     });
 });
+
 //función header scrolling
 window.addEventListener('scroll', function () {
     const header = document.getElementById('containerheader');
