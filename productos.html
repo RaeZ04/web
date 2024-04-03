@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+
+<body>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('containerheader');
+            const title = document.getElementById('titulo');
+            if (window.scrollY > 20) {
+                header.classList.add('scrolled');
+                title.style.opacity = '0';
+            } else {
+                header.classList.remove('scrolled');
+                title.style.opacity = '1';
+            }
+        });
+
+    </script>
+
+    <header>
+
+        <div id="containerheader">
+
+            <div id="containerizq">
+
+                <div id="containerproductos">
+
+                    <p class="textoheader">PRODUCTOS</p>
+                    <img class="iconheader" src="Media/producto.png" alt="">
+
+                </div>
+
+                <div id="containernoticias">
+
+                    <p class="textoheader">NOTICIAS</p>
+                    <img class="iconheader3" src="Media/paper.png" alt="">
+
+                </div>
+
+                <div id="containercontacto">
+
+                    <p class="textoheader">CONTACTO</p>
+                    <img class="iconheader2" src="Media/twitter.png" alt="">
+
+                </div>
+
+            </div>
+
+            <div id="containermedio">
+
+                <a href="index.html"><img id="logopagina" src="Media/LOGO.png" alt=""></a>
+                <a href="index.html">
+                    <p id="titulo">NetSeg</p>
+                </a>
+
+            </div>
+
+
+            <div id="containerder">
+
+                <a href="logYregistro.html"><img id="iconsign" src="Media/sign.png" alt=""></a>
+                <div>
+                    <a href="logYregistro.html">
+                        <p class="textoheader2">INICIAR SESIÓN</p>
+                    </a>
+                    <a href="logYregistro.html">
+                        <p class="textoheader2">REGISTRATE</p>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <div id="centrarbody">
+
+        <div class="prodapartado1">
+
+            <p class="tituloprod1"> HOTPLUG ATTACK </p>
+            <div class="lineaprod"></div>
+
+            <div class="productos1">
+                <div class="linea1prod">
+                    <div class="prod1">
+
+                        <img id="imagenart" src="Media/usb1.png" alt="">
+                        <p class="textoprod1">USB RUBBER DUCKY</p>
+                        <p>
+                            Un dispositivo Flash-USB que inyecta multiple cargas de pulsación de teclas a alta velocidad en ordenadores
+                            desprevenidos.</p>
+                        <p class="textoprecio">€79.99</p>
+
+                    </div>
+                    <div class="prod1">
+
+                        <img id="imagenart" src="Media/usb2.png" alt="">
+                        <p class="textoprod1">BASH BUNNY</p>
+                        <p>
+                            Una caja Linux de cuatro núcleos en una memoria USB que imita múltiples dispositivos
+                            confiables para implementar pentest avanzado.</p>
+                        <p class="textoprecio">€119.99</p>
+
+                    </div>
+                </div>
+                <div class="linea1prod">
+                    <div class="prod1">
+
+                        <img id="imagenart" src="Media/prod3.png" alt="">
+                        <p class="textoprod1">PLUNDER BUG LAN TAP</p>
+                        <p>
+                            Un dispositivo portátil inteligente para monitorización LAN con conexión USB-C, ideal para
+                            monitorización pasiva o interacción activa en redes cableadas.</p>
+                        <p class="textoprecio">€79.99</p>
+
+                    </div>
+                    <div class="prod1">
+
+                        <img id="imagenart" src="Media/prod4.png" alt="">
+                        <p class="textoprod1">SHARK JACK</p>
+                        <p>
+                            Inyectarse en la red y ejecutar instantáneamente cargas avanzadas de reconocimiento,
+                            exfiltración, ataque y automatización.</p>
+                        <p class="textoprecio">€99.99</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="spacer1"></div>
+
+        <div class="prodapartado1">
+
+            <p class="tituloprod1"> REMOTE ACCESS </p>
+            <div class="lineaprod"></div>
+
+            <div class="productos1">
+                <div class="linea1prod">
+                    <div class="prod1">
+
+                        <img id="imagenart" src="Media/prod5.png" alt="">
+                        <p class="textoprod1">PACKET SQUIRREL MARK II</p>
+                        <p>
+                            Una caja Linux del tamaño de una caja de cerillas que integra múltiples cargas de red como
+                            la captura de paquetes, la tunelización VPN y los ataques man-in-the-middle.</p>
+                        <p class="textoprecio">€79.99</p>
+
+                    </div>
+                    <div class="prod1">
+
+                        <img id="imagenart" src="Media/prod6.png" alt="">
+                        <p class="textoprod1">KEY CROC</p>
+                        <p>
+                            Un registrador de teclas equipado con herramientas de pentesting, acceso remoto y cargas que
+                            desencadenan ataques multi-vectores al escribirse palabras clave específicas.</p>
+                        <p class="textoprecio">€119.99</p>
+
+                    </div>
+                </div>
+                <div class="linea1prod">
+                    <div class="prod1">
+
+                        <img id="imagenart" src="Media/prod7.png" alt="">
+                        <p class="textoprod1">SCREEN CRAB</p>
+                        <p>
+                            Un dispositivo sigiloso de intermediario de video que captura capturas de pantalla o
+                            grabaciones en disco y transmite en vivo a internet para visualización remota.</p>
+                        <p class="textoprecio">€199.99</p>
+
+                    </div>
+                    <div class="prod1">
+
+                        <img id="imagenart" src="Media/prod8.png" alt="">
+                        <p class="textoprod1">LAN TURTLE</p>
+                        <p>
+                            Un kit de acceso remoto camuflado como un adaptador USB Ethernet común. Conéctalo a una LAN
+                            y obtén instantáneamente una shell de backdoor.</p>
+                        <p class="textoprecio">€79.99</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="spacer1"></div>
+
+        <div class="prodapartado1">
+
+            <p class="tituloprod1"> WIFI PENTESTING </p>
+            <div class="lineaprod"></div>
+
+            <div class="productos1">
+                <div class="linea1prod">
+                    <div class="prod1">
+
+                        <img id="imagenart" src="Media/pineaple2.png" alt="">
+                        <p class="textoprod1">WIFI PINEAPPLE</p>
+                        <p>
+                            La infame plataforma de pentesting Wi-Fi y punto de acceso clandestino. Su sencilla interfaz
+                            web aloja un ecosistema de aplicaciones.</p>
+                        <p class="textoprecio">€139.99</p>
+
+                    </div>
+                    <div class="prod1">
+
+                        <img id="imagenart" src="Media/prod2.png" alt="">
+                        <p class="textoprod1">WIFI PINEAPPLE ENTERPRISE</p>
+                        <p>
+                            Aprovechando más de 15 años de experiencia en seguridad Wi-Fi, esta Piña WiFi empresarial
+                            está diseñada para los espacios aéreos más exigentes.</p>
+                        <p class="textoprecio">€849.99</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="spacer1"></div>
+
+        <footer>
+            <div id="footerizq">
+                <img id="logofooter" src="Media/LOGO.png" alt="">
+            </div>
+            <div id="footermedio">
+                <div id="footermedio1">
+                    <p class="titulofooter">INFORMACION</p>
+                    <p class="textofooter">ABOUT</p>
+                    <p class="textofooter">SOPORTE</p>
+                </div>
+                <div id="footermedio2">
+                    <p class="titulofooter">EXPLORA</p>
+                    <p class="textofooter">PRODUCTOS</p>
+                    <p class="textofooter">NOTICIAS</p>
+                </div>
+            </div>
+            <div id="footerder">
+                <p class="titulofooter">ABOUT US</p>
+                <p class="textofooter2">Pagina hecha por Sergio y Juan Carlos en el curso de DAW como trabajo para hacer
+                    una pagina web.</p>
+            </div>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>

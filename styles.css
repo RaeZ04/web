@@ -596,6 +596,56 @@ footer {
   padding-bottom: 0.5vmax;
 }
 
+.prodapartado1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.productos1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tituloprod1 {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 2vmax;
+  font-family: "Tahoma";
+}
+
+.lineaprod {
+  border-top: 0.1vmax solid black;
+  width: 85%;
+}
+
+.linea1prod {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10vmax;
+  width: 100%;
+}
+
+.prod1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 15rem;
+  text-align: center;
+}
+
+.textoprecio {
+  margin-top: 0;
+  color: red;
+}
+
 @media (max-width: 1520px) {
   #videocontainer iframe {
     border-radius: 0.6vmax;
